@@ -28,6 +28,10 @@ Example:
 
 from dotenv import dotenv_values
 import requests
+import pandas as pd
+import geopandas as gpd
+from shapely.geometry import Point
+
 
 # get API key
 config = dotenv_values(".env")
@@ -37,10 +41,27 @@ KEY = config["KEY"]
 region_code = "ID"
 
 # get gauges by region
+includeNonVerified = True
 res = requests.post(
     f"https://floodforecasting.googleapis.com/v1/gauges:searchGaugesByArea?key={KEY}",
-    json={"regionCode": region_code},
+    json={"regionCode": region_code, "includeNonQualityVerified": includeNonVerified},
 ).json()
 gauges = res["gauges"] if res else []
 
 print(len(gauges))
+
+df = pd.DataFrame(gauges)
+# Create geometry column from latitude and longitude
+df["geometry"] = df["location"].apply(
+    lambda loc: Point(loc["longitude"], loc["latitude"])
+)
+
+# Convert to GeoDataFrame
+gdf = gpd.GeoDataFrame(df, geometry="geometry", crs="EPSG:4326")
+
+# Drop the original location column if not needed
+gdf = gdf.drop(columns=["location"])
+
+print(gdf.head())
+output = "google_flood_nonverfiled.geojson"
+gdf.to_file(output, driver="GeoJSON")

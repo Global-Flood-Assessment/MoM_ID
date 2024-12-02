@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "google_flood_verfiled",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "siteName": "", "source": "HYBAS", "river": "", "gaugeId": "hybas_5120218870", "qualityVerified": true, "hasModel": true }, "geometry": { "type": "Point", "coordinates": [ 140.847916666661717, -8.718750000000739 ] } },
+{ "type": "Feature", "properties": { "siteName": "", "source": "HYBAS", "river": "", "gaugeId": "hybas_5120143520", "qualityVerified": true, "hasModel": true }, "geometry": { "type": "Point", "coordinates": [ 111.981249999995285, 0.777083333332541 ] } },
+{ "type": "Feature", "properties": { "siteName": "", "source": "HYBAS", "river": "", "gaugeId": "hybas_5120015730", "qualityVerified": true, "hasModel": true }, "geometry": { "type": "Point", "coordinates": [ 114.572916666661953, -3.577083333334144 ] } },
+{ "type": "Feature", "properties": { "siteName": "", "source": "HYBAS", "river": "", "gaugeId": "hybas_5120180760", "qualityVerified": true, "hasModel": true }, "geometry": { "type": "Point", "coordinates": [ 104.868749999995444, -3.347916666667516 ] } },
+{ "type": "Feature", "properties": { "siteName": "", "source": "HYBAS", "river": "", "gaugeId": "hybas_5120121670", "qualityVerified": true, "hasModel": true }, "geometry": { "type": "Point", "coordinates": [ 95.4937499999956, 5.402083333332428 ] } },
+{ "type": "Feature", "properties": { "siteName": "", "source": "HYBAS", "river": "", "gaugeId": "hybas_5120655470", "qualityVerified": true, "hasModel": true }, "geometry": { "type": "Point", "coordinates": [ 104.143749999995521, -2.985416666667504 ] } },
+{ "type": "Feature", "properties": { "siteName": "", "source": "HYBAS", "river": "", "gaugeId": "hybas_5120031380", "qualityVerified": true, "hasModel": true }, "geometry": { "type": "Point", "coordinates": [ 119.472916666661845, -5.122916666667493 ] } },
+{ "type": "Feature", "properties": { "siteName": "", "source": "HYBAS", "river": "", "gaugeId": "hybas_5120125020", "qualityVerified": true, "hasModel": true }, "geometry": { "type": "Point", "coordinates": [ 98.047916666662317, 4.277083333332371 ] } },
+{ "type": "Feature", "properties": { "siteName": "", "source": "HYBAS", "river": "", "gaugeId": "hybas_5120009480", "qualityVerified": true, "hasModel": true }, "geometry": { "type": "Point", "coordinates": [ 107.014583333328744, -6.077083333334088 ] } },
+{ "type": "Feature", "properties": { "siteName": "", "source": "HYBAS", "river": "", "gaugeId": "hybas_5120181770", "qualityVerified": true, "hasModel": true }, "geometry": { "type": "Point", "coordinates": [ 115.718749999995239, -3.435416666667493 ] } },
+{ "type": "Feature", "properties": { "siteName": "", "source": "HYBAS", "river": "", "gaugeId": "hybas_5120659200", "qualityVerified": true, "hasModel": true }, "geometry": { "type": "Point", "coordinates": [ 104.939583333328798, -3.797916666667447 ] } },
+{ "type": "Feature", "properties": { "siteName": "", "source": "HYBAS", "river": "", "gaugeId": "hybas_5120016500", "qualityVerified": true, "hasModel": true }, "geometry": { "type": "Point", "coordinates": [ 110.397916666661956, -2.910416666667459 ] } },
+{ "type": "Feature", "properties": { "siteName": "", "source": "HYBAS", "river": "", "gaugeId": "hybas_5120207180", "qualityVerified": true, "hasModel": true }, "geometry": { "type": "Point", "coordinates": [ 110.535416666662115, -6.847916666667459 ] } }
+]
+}
